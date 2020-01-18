@@ -1,0 +1,44 @@
+version: "3.7"
+services:
+    wordpress:
+        image: wordpress:latest
+        depends_on:
+            - db
+        restart: always
+        volumes: 
+            - .:/var/www/html
+        environment: 
+            WORDPRESS_DB_HOST: DB:3306
+            WORDPRESS_DB_PASSWORD: password
+        ports:
+            - 3000:80
+        networks:
+            - back
+    
+    db:
+        image: mysql:5.7
+        restart: always
+        volumes: 
+            - db_data:/var/lib/mysql
+        environment: 
+            MYSQL_ROOT_PASSWORD: password
+        networks:
+            - back
+
+    phpmyadmin:
+        image: phpmyadmin/phpmyadmin
+        depends_on:
+            - db
+        restart: always
+        environment: 
+            PMA_HOST: db
+            MYSQL_ROOT_PASSWORD: password
+        ports:
+            - 8080:80
+        networks:
+            - back
+    
+networks:
+    back:
+volumes: 
+    db_data:
