@@ -544,10 +544,8 @@
 
   <!-- External JavaScripts
   ============================================= -->
-  <script src="js/jquery.js"></script>
-  <script src="js/plugins.js"></script>
-  <script src="js/functions.js"></script>
-
+  
+  <?php wp_footer(); ?>
 </body>
 
 </html>
