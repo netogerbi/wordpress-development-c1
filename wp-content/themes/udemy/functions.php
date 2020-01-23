@@ -8,6 +8,9 @@
 include( get_theme_file_path( '/includes/front/enqueue.php') );
 
 // hooks
-add_action( 'wp_enqueue_cripts', 'ju_enqueue' );
+add_action( 'wp_enqueue_scripts', 'ju_enqueue' );
 
 // shortcodes
+
+// other tests
+// error_log('TESTEEEE');

@@ -1,7 +1,7 @@
 version: "3.7"
 services:
     wordpress:
-        image: wordpress:latest
+        build: .
         depends_on:
             - db
         restart: always
