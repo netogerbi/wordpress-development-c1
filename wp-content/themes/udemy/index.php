@@ -110,102 +110,17 @@
 
             <div id="primary-menu-trigger"><i class="icon-reorder"></i></div>
 
-            <!-- ul Main Menu
-            ======================================== -->
-            <ul>
-              <li><a href="#">
-                  <div>Menu Item 1</div>
-                </a>
-                <ul>
-                  <li>
-                    <a href="#">
-                      <div>Submenu Item 1</div>
-                    </a>
-                    <ul>
-                      <li><a href="#">
-                          <div>Submenu Item 1</div>
-                        </a></li>
-                      <li><a href="#">
-                          <div>Submenu Item 2</div>
-                        </a></li>
-                    </ul>
-                  </li>
-                  <li><a href="#">
-                      <div>Submenu Item 2</div>
-                    </a></li>
-                </ul>
-              </li>
-              <li><a href="#">
-                  <div>Menu Item 2</div>
-                </a>
-                <ul>
-                  <li><a href="#">
-                      <div>Submenu Item 1</div>
-                    </a>
-                    <ul>
-                      <li><a href="#">
-                          <div>Submenu Item 1</div>
-                        </a></li>
-                      <li><a href="#">
-                          <div>Submenu Item 2</div>
-                        </a></li>
-                    </ul>
-                  </li>
-                  <li><a href="#">
-                      <div>Submenu Item 2</div>
-                    </a></li>
-                </ul>
-              </li>
-              <li><a href="#">
-                  <div>Menu Item 3</div>
-                </a>
-                <ul>
-                  <li><a href="#">
-                      <div>Submenu Item 1</div>
-                    </a>
-                    <ul>
-                      <li><a href="#">
-                          <div>Submenu Item 1</div>
-                        </a>
-                        <ul>
-                          <li><a href="#">
-                              <div>Submenu Item 1</div>
-                            </a></li>
-                          <li><a href="#">
-                              <div>Submenu Item 2</div>
-                            </a></li>
-                          <li><a href="#">
-                              <div>Submenu Item 3</div>
-                            </a></li>
-                        </ul>
-                      </li>
-                      <li><a href="#">
-                          <div>Submenu Item 2</div>
-                        </a></li>
-                      <li><a href="#">
-                          <div>Submenu Item 3</div>
-                        </a></li>
-                    </ul>
-                  </li>
-                  <li><a href="#">
-                      <div>Submenu Item 2</div>
-                    </a>
-                    <ul>
-                      <li><a href="#">
-                          <div>Submenu Item 1</div>
-                        </a></li>
-                      <li><a href="#">
-                          <div>Submenu Item 2</div>
-                        </a></li>
-                    </ul>
-                  </li>
-                  <li><a href="#">
-                      <div>Submenu Item 3</div>
-                    </a></li>
-                </ul>
-              </li>
-              <li><a href="#">Menu Item 4</a></li>
-            </ul><!-- ul Main Menu end -->
+            <?php
+            // this menu must be created in apearance > costumize > menu. in wp dash
+              if( has_nav_menu( 'primary' ) ) {
+                wp_nav_menu([
+                  'theme_location'      => 'primary', // tells wp location of registered menu
+                  'container'           => false, // tells if ul li menu must be wrapped with div or other tag
+                  'fallback_cb'         => false, // tells wp the default menu if this one fails
+                  'depth'               => 4 // pesquisar
+                ]);
+              }
+            ?>
 
             <!-- Top Cart
             ============================================= -->
