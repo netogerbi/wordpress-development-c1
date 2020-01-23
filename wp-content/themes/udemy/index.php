@@ -117,7 +117,8 @@
                   'theme_location'      => 'primary', // tells wp location of registered menu
                   'container'           => false, // tells if ul li menu must be wrapped with div or other tag
                   'fallback_cb'         => false, // tells wp the default menu if this one fails
-                  'depth'               => 4 // pesquisar
+                  'depth'               => 4, // níveis de menu
+                  'walker'              => new JU_Custom_Nav_Walker()
                 ]);
               }
             ?>

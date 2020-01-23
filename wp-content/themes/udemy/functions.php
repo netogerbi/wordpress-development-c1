@@ -8,6 +8,7 @@ define( 'JU_DEV_MODE', true );
 // includes
 include( get_theme_file_path( '/includes/front/enqueue.php') );
 include( get_theme_file_path( '/includes/setup.php') );
+include( get_theme_file_path( '/includes/custom-nav-walker.php') );
 
 // hooks
 // auto load scripts and styles hooking on wp_enqueue_scripts
