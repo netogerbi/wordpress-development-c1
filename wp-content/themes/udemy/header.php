@@ -17,7 +17,7 @@
 
 </head>
 
-<body class="stretched no-transition">
+<body <?php body_class( 'stretched no-transition' ); // loads additional classes in the body tag dinamically (used by addons...) ?>>
 
   <!-- Document Wrapper
   ============================================= -->
