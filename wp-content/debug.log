@@ -3,3 +3,4 @@
 [22-Jan-2020 23:22:06 UTC] http://localhost:3000/wp-content/themes/udemy
 [23-Jan-2020 15:20:33 UTC] PHP Warning:  A non-numeric value encountered in /var/www/html/wp-content/plugins/fakerpress/providers/wp-user.php on line 17
 [23-Jan-2020 15:39:16 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, function 'ju_setup_theme' not found or invalid function name in /var/www/html/wp-includes/class-wp-hook.php on line 288
+[24-Jan-2020 15:13:35 UTC] PHP Warning:  An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/forums/">support forums</a>. (WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.) in /var/www/html/wp-includes/update.php on line 162
