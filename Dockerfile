@@ -1,4 +1,4 @@
-FROM wordpress:latest
+FROM wordpress:5.0.0
 
 RUN cp /usr/local/etc/php/php.ini-development /usr/local/etc/php/php.ini && \
     sed -i 's/post_max_size = 80M/max_execution_time = 50M/g' /usr/local/etc/php/php.ini && \

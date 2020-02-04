@@ -4,3 +4,19 @@
 [23-Jan-2020 15:20:33 UTC] PHP Warning:  A non-numeric value encountered in /var/www/html/wp-content/plugins/fakerpress/providers/wp-user.php on line 17
 [23-Jan-2020 15:39:16 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, function 'ju_setup_theme' not found or invalid function name in /var/www/html/wp-includes/class-wp-hook.php on line 288
 [24-Jan-2020 15:13:35 UTC] PHP Warning:  An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/forums/">support forums</a>. (WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.) in /var/www/html/wp-includes/update.php on line 162
+[02-Feb-2020 22:36:25 UTC] PHP Warning:  include(process/rate-recipe.php): failed to open stream: No such file or directory in /var/www/html/wp-content/plugins/recipe/index.php on line 25
+[02-Feb-2020 22:36:25 UTC] PHP Warning:  include(): Failed opening 'process/rate-recipe.php' for inclusion (include_path='.:/usr/local/lib/php') in /var/www/html/wp-content/plugins/recipe/index.php on line 25
+[02-Feb-2020 22:36:25 UTC] PHP Warning:  include(includes/admin/init.php): failed to open stream: No such file or directory in /var/www/html/wp-content/plugins/recipe/index.php on line 26
+[02-Feb-2020 22:36:25 UTC] PHP Warning:  include(): Failed opening 'includes/admin/init.php' for inclusion (include_path='.:/usr/local/lib/php') in /var/www/html/wp-content/plugins/recipe/index.php on line 26
+[02-Feb-2020 22:36:25 UTC] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function add_action(), 1 passed in /var/www/html/wp-content/plugins/recipe/index.php on line 37 and at least 2 expected in /var/www/html/wp-includes/plugin.php:403
+Stack trace:
+#0 /var/www/html/wp-content/plugins/recipe/index.php(37): add_action('wp_ajax')
+#1 /var/www/html/wp-settings.php(360): include_once('/var/www/html/w...')
+#2 /var/www/html/wp-config.php(97): require_once('/var/www/html/w...')
+#3 /var/www/html/wp-load.php(37): require_once('/var/www/html/w...')
+#4 /var/www/html/wp-admin/admin-ajax.php(22): require_once('/var/www/html/w...')
+#5 {main}
+  thrown in /var/www/html/wp-includes/plugin.php on line 403
+[02-Feb-2020 22:38:26 UTC] PHP Warning:  include(includes/admin/init.php): failed to open stream: No such file or directory in /var/www/html/wp-content/plugins/recipe/index.php on line 26
+[02-Feb-2020 22:38:26 UTC] PHP Warning:  include(): Failed opening 'includes/admin/init.php' for inclusion (include_path='.:/usr/local/lib/php') in /var/www/html/wp-content/plugins/recipe/index.php on line 26
+[02-Feb-2020 22:38:26 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, function 'recipe_admin_init' not found or invalid function name in /var/www/html/wp-includes/class-wp-hook.php on line 288
